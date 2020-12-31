@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="pc.css">
     <link href='https://fonts.googleapis.com/css?family=Lato&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
 </head>
 
 <body>
@@ -272,9 +271,8 @@
     </div>
 
     <script type="text/javascript"> 
-        if (Modernizr.touchevents){
-            location.href="index_mobile.html";
-        }
+        var ratio = window.devicePixelRatio; 
+        if(ratio >= 1.5){ location.href = 'index_mobile.html'; }
     </script>
 
 
